@@ -29,18 +29,20 @@ router.post('/signup', (req, res) => {
                             console.log("User added successfully")
                             res.status(200).json({ "message": "User added successfully" })
                         })
-                        .catch((err)=>{
+                        .catch((err) => {
                             console.log(err)
                             res.status(500).json({ "message": err })
                         })
                 })
-                .catch((err)=>{
+                .catch((err) => {
                     console.log(err)
                     res.status(500).json({ "message": err })
                 })
         })
-        .catch((err)=>{
+        .catch((err) => {
             console.log(err)
             res.status(500).json({ "message": err })
         })
 })
+
+export default router
