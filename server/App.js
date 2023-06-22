@@ -1,9 +1,7 @@
-import React from 'react'
+import express from 'express'
+const app = express()
+const port=process.env.PORT || 3001
 
-const App = () => {
-  return (
-    <div>App</div>
-  )
-}
-
-export default App
+app.listen(port, ()=>{
+  console.log('Server is running on port 3001')
+})
